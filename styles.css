@@ -98,3 +98,72 @@
     text-transform: uppercase;
     color: var(--slightly-transparent-white-main-paragraph);
 }
+
+/*========== media queries ==========*/
+
+/*========== tablet ==========*/
+@media screen and (min-width: 768px){
+    .card-content{
+        max-width: 30rem;
+    }
+    .card-info{
+        padding: 0 3rem;
+    }
+    .card-info__title,
+    .card-info__title span{
+        font-size: 2rem;
+    }
+    .card-info__description{
+        font-size: 1rem;
+    }
+    .card-info__stats{
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+}
+/*========== desktop ==========*/
+@media screen and (min-width: 1440px){
+    .card-content{
+        max-width: 83rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .card-banner img{
+        content: url(./assets/images/image-header-desktop.jpg);
+        width: 40rem;
+        border-radius: 0 .5rem .5rem 0;
+    }
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0 5rem;
+    }
+    .card-info__title,
+    .card-info__description{
+        text-align: start;
+    }
+    .card-info__title,
+    .card-info__title span{
+        font-size: 2.6rem;
+    }
+    .card-info__title{
+        margin-top: 0;
+    }
+    .card-info__description{
+        padding-right: 7rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+    .card-info__stats{
+        margin-bottom: 0rem;
+    }
+    .card-info__stats-item{
+        align-items: start;
+    }
+}
