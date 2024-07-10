@@ -127,14 +127,14 @@
 /*========== desktop ==========*/
 @media screen and (min-width: 1440px){
     .card-content{
-        max-width: 83rem;
+        max-width: 80rem;
         height: 30rem;
         display: flex;
         flex-direction: row-reverse;
     }
     .card-banner img{
         content: url(./assets/images/image-header-desktop.jpg);
-        width: 40rem;
+        width: 39rem;
         border-radius: 0 .5rem .5rem 0;
     }
     .card-info{
