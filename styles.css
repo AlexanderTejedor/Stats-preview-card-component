@@ -1,0 +1,100 @@
+/*========== var ==========*/
+:root{
+    /*========== primary colors ==========*/
+    --very-dark-blue-main-background: hsl(233, 47%, 7%);
+    --dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+    --soft-violet-accent: hsl(277, 64%, 61%);
+
+    /*========== neutral colors ==========*/
+    --white-main-heading-stats: hsl(0, 0%, 100%);
+    --slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+
+    /*========== font ==========*/
+    --normal-weight-font: 400;
+    --bold-weight-font: 700;
+
+    --font-paragrah:"Lexend Deca", sans-serif;
+    --font-title: "Inter", sans-serif;
+}
+/*========== reset ==========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: var(--font-paragrah);
+}
+/*========== global ==========*/
+
+/*========== main ==========*/
+.main-container{
+    width: 100%;
+    height: 100dvh;
+    display: grid;
+    place-content: center;
+    background-color: var(--very-dark-blue-main-background);
+}
+/*========== card ==========*/
+.card-content{
+    max-width: 20rem;
+    border-radius: .6rem;
+    color: var(--white-main-heading-stats);
+    background-color: var(--dark-desaturated-blue-card-background);
+}
+.card-banner{
+    position: relative;
+}
+.card-banner img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem .6rem 0 0;
+    filter: opacity(.7) drop-shadow(0 0 0 var(--soft-violet-accent)) hue-rotate(3deg) brightness(0.62) saturate(400%);
+}
+.card-info{
+    padding: 0 1.5rem;
+}
+.card-info__title{
+    margin: 1.5rem 0 1rem;
+}
+.card-info__title span{
+    color: var(--soft-violet-accent);
+}
+.card-info__title,
+.card-info__title span{
+    font-family: var(--font-title);
+    font-size: 1.7rem;
+    font-weight: var(--bold-weight-font);
+    text-align: center;
+}
+.card-info__description{
+    font-family: var(--font-title);
+    line-height: 1.5;
+    text-align: center;
+    color: var(--slightly-transparent-white-main-paragraph);
+    margin-bottom: 2rem;
+}
+.card-info__stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.3rem;
+}
+.card-info__stats-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-info__stats-item h2{
+    font-size: 1.5rem;
+    font-family: var(--font-title);
+    margin-bottom: .5rem;
+}
+.card-info__stats-item p{
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: var(--slightly-transparent-white-main-paragraph);
+}
